@@ -12,6 +12,10 @@ const nextConfig = {
 		],
 	},
 	reactStrictMode: true,
+	output: "standalone",
+experimental: {
+outputFileTracingRoot: path.join(__dirname, "../../"),
+},
 	async redirects() {
 		return [
 			{
