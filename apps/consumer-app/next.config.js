@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const path = require("path");
+
 const nextConfig = {
 	images: {
 		dangerouslyAllowSVG: true,
@@ -12,11 +12,6 @@ const nextConfig = {
 		],
 	},
 	reactStrictMode: true,
-}
-	
-
-module.exports = {
-	nextConfig,
 	async redirects() {
 		return [
 			{
@@ -27,4 +22,7 @@ module.exports = {
 		]
 	},
 }
+
+module.exports = {
+	nextConfig,
 }
