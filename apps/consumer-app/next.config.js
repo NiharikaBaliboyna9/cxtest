@@ -7,16 +7,7 @@ const nextConfig = {
   experimental: {
     // this includes files from the monorepo base two directories up
     outputFileTracingRoot: path.join(__dirname, '../../'),           // Here you can modify as per your use case. Currently, the NextJS folder is two folders inside from the root folder, you can modify the same for one folder.
-  },
-	async redirects() {
-		return [
-			{
-				source: '/sg',
-				destination: '/',
-				permanent: true,
-			},
-		]
-	},
+  }
 }
 
 module.exports = {
