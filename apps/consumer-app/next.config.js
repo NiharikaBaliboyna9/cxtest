@@ -1,16 +1,6 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
 const nextConfig = {
-	images: {
-		dangerouslyAllowSVG: true,
-		remotePatterns: [
-			{
-				protocol: 'https',
-				hostname: '*',
-			},
-			// TODO: Add further security by granular whitelisting
-		],
-	},
 	reactStrictMode: true,
 	swcMinify: true,
   output: 'standalone',
